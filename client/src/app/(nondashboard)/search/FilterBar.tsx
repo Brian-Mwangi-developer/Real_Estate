@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { useDispatch } from 'react-redux';
 import {usePathname, useRouter} from "next/navigation";
 import { useAppSelector } from '@/state/redux';
-//@ts-ignore
 import { debounce } from "lodash";
 import {
   FiltersState,

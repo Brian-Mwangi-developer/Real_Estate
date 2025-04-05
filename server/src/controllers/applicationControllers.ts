@@ -153,9 +153,9 @@ export const createApplication = async (
           lease: true,
         },
       });
-
+      console.log("Application",application);
       return application;
-    });
+    },{timeout: 10000});
 
     res.status(201).json(newApplication);
   } catch (error: any) {
